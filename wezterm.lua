@@ -60,6 +60,7 @@ return {
 	font = wezterm.font("Moralerspace Neon HWNF"),
 	use_ime = true,
 	font_size = 15.0,
+	line_height = 1.1,
 	color_scheme = "Tokyo Night",
 	adjust_window_size_when_changing_font_size = false,
 	window_close_confirmation = "NeverPrompt",
@@ -86,7 +87,8 @@ return {
 			inactive_tab_edge = "none",
 		},
 	},
-
+	max_fps = 120,
+	prefer_egl = true,
 	leader = { key = "q", mods = "CTRL", timeout_milliseconds = 2000 },
 	keys = {
 		{ key = "E", mods = "ALT", action = wezterm.action({ EmitEvent = "trigger-nvim-with-scrollback" }) },
