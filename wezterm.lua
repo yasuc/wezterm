@@ -122,7 +122,7 @@ return {
 	wsl_domains = wsl_domains,
 	font = wezterm.font("Moralerspace Neon HWNF"),
 	use_ime = true,
-	font_size = 15.0,
+	font_size = 16.0,
 	line_height = 1.1,
 	color_scheme = "Tokyo Night",
 	adjust_window_size_when_changing_font_size = false,
@@ -150,6 +150,13 @@ return {
 			inactive_tab_edge = "none",
 		},
 	},
+
+	inactive_pane_hsb = {
+		hue = 0.5,
+		saturation = 1.0,
+		brightness = 0.9,
+	},
+
 	max_fps = 120,
 	prefer_egl = true,
 	leader = { key = "q", mods = "CTRL", timeout_milliseconds = 2000 },
