@@ -72,7 +72,7 @@ return {
 	use_ime = true,
 	font_size = 16.0,
 	line_height = 1.1,
-	color_scheme = "Tokyo Night",
+	color_scheme = "Tokyo Night Storm",
 	adjust_window_size_when_changing_font_size = false,
 	window_close_confirmation = "NeverPrompt",
 	window_background_opacity = 0.8,
