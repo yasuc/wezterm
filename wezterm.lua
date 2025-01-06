@@ -66,6 +66,12 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 	}
 end)
 
+-- OSを判別する
+local os_name = wezterm.target_triple
+
+-- デバッグ用にOS名を表示
+print("Detected OS: " .. os_name)
+
 return {
 	wsl_domains = wsl_domains,
 	font = wezterm.font("Moralerspace Neon HWNF"),
