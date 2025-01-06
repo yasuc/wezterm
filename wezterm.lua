@@ -72,6 +72,19 @@ local os_name = wezterm.target_triple
 -- デバッグ用にOS名を表示
 print("Detected OS: " .. os_name)
 
+if os_name:find("windows") then
+	print("Running on Windows")
+-- config.default_prog = {"pwsh.exe"}
+elseif os_name:find("darwin") then
+	print("Running on macOS")
+-- config.default_prog = {"/bin/zsh"}
+elseif os_name:find("linux") then
+	print("Running on Linux")
+-- config.default_prog = {"/usr/bin/zsh"}
+else
+	print("Unknown OS")
+end
+
 return {
 	wsl_domains = wsl_domains,
 	font = wezterm.font("Moralerspace Neon HWNF"),
