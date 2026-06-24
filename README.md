@@ -100,10 +100,6 @@ Reads profiles from `~/.config/karabiner/karabiner.json` and switches via `karab
 
 Available from command palette (`Ctrl+P`). Start/stop `caffeinate` to prevent sleep with preset durations (30min, 1hr, 2hr, unlimited).
 
-### Translation (copy mode)
-
-Select text in copy mode and press `Shift+Y` to translate to Japanese via `plamo-translate-cli`.
-
 ### Focus-linked Opacity
 
 - Focused: `opacity = 0.9` (blur visible)
@@ -128,7 +124,6 @@ Patterns: URLs, AWS ARNs, file paths, git commit hashes, IP addresses, UUIDs.
 | `modules/karabiner_profile.lua` | Karabiner profile switcher |
 | `modules/caffeinate.lua` | Sleep prevention |
 | `modules/opencode_session.lua` | Open code session fzf switcher |
-| `modules/translate.lua` | Text translation |
 | `scripts/preview_opencode_session.lua` | fzf preview script for opencode sessions |
 
 ## Requirements
@@ -139,4 +134,4 @@ Patterns: URLs, AWS ARNs, file paths, git commit hashes, IP addresses, UUIDs.
 - [opencode](https://opencode.ai) (optional, for opencode integration)
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/) (optional, for profile switcher)
 - [AWS CLI](https://aws.amazon.com/cli/) (optional, for profile selector)
-- [plamo-translate-cli](https://github.com/mozumasu/plamo-translate) (optional, for translation)
+

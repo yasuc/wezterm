@@ -54,6 +54,5 @@ require("modules.opacity").apply_to_config(config)
 require("modules.aws_profile").apply_to_config(config)
 require("modules.karabiner_profile").apply_to_config(config)
 require("modules.opencode_session").apply_to_config(config)
-require("modules.translate").apply_to_config(config)
 
 return config
