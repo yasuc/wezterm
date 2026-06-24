@@ -1,5 +1,7 @@
 # WezTerm Configuration
 
+[日本語版](README.ja.md)
+
 Personal [WezTerm](https://wezfurlong.org/wezterm/) configuration with modular Lua structure.
 
 ## Features
