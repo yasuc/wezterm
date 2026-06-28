@@ -54,14 +54,9 @@ local function sanitize_utf8(str)
 end
 
 -- ペインタイトルからopencodeのステータスを判定
-local function get_opencode_status(pane)
-  local success, title = pcall(function()
-    return pane:get_title()
-  end)
-  if not success or not title or title == "" then
-    return "idle"
-  end
-  return "idle"
+-- スキャン時点でopencodeがフォアグラウンドプロセスとして動作しているため常にrunning
+local function get_opencode_status(_pane)
+  return "running"
 end
 
 -- ペインタイトルからセッション内容を取得

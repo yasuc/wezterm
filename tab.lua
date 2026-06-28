@@ -152,6 +152,15 @@ function module.apply_to_config(config)
 	local ssh_host_cache = {}
 	local opencode_cache = {} -- pane_id -> bool (Open Code検出キャッシュ)
 
+	-- ペイン終了時に全キャッシュをクリーンアップ
+	wezterm.on("pane-exited", function(pane, _window)
+		local id = pane:pane_id()
+		title_cache[id] = nil
+		raw_cwd_cache[id] = nil
+		ssh_host_cache[id] = nil
+		opencode_cache[id] = nil
+	end)
+
 	-- タイトルキャッシュの更新
 	wezterm.on("update-status", function(_, pane)
 		local pane_id = pane:pane_id()

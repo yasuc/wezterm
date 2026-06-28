@@ -112,6 +112,11 @@ end
 -- ペインの最小化前の高さを記憶するテーブル (pane_id -> percent)
 local pane_height_store = {}
 
+-- ペイン終了時にキャッシュをクリーンアップ
+wezterm.on("pane-exited", function(pane, _window)
+  pane_height_store[pane:pane_id()] = nil
+end)
+
 local leader = { key = "q", mods = "CTRL", timeout_milliseconds = 2000 }
 
 local keys = {
