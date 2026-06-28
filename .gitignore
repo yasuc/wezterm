@@ -1,2 +1,5 @@
 # WezTerm log files
 *.log
+
+# macOS
+.DS_Store

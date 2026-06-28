@@ -26,7 +26,7 @@ Personal [WezTerm](https://wezfurlong.org/wezterm/) configuration with modular L
 | `Leader b` | View buffer in Neovim (WezCapture) |
 | `Leader l` | Launch command selector (ghost/lazygit/nvim/yazi) |
 | `Leader a` | Quick Select ARN → open AWS Console |
-| `Ctrl+Shift+c` | Minimize/restore pane to 1 row |
+| `Ctrl+Shift+c` | Minimize/restore pane to 1 row (toggle) |
 | `Ctrl+Shift+h/j/k/l` | Navigate panes |
 | `Ctrl+Tab` / `Ctrl+Shift+Tab` | Next/prev tab |
 | `Super+n` | New window |
@@ -37,7 +37,7 @@ Personal [WezTerm](https://wezfurlong.org/wezterm/) configuration with modular L
 | `Super+r` | Reload config |
 | `Ctrl+P` | Command palette |
 | `Ctrl+X` | Copy mode (viewport middle) |
-| `Ctrl+Z` | Toggle pane zoom |
+| `Ctrl+Shift+Z` | Toggle pane zoom |
 | `Ctrl+U` | Character select |
 | `Ctrl+Shift+R` | Force reload config |
 | `Super+Shift+Space` | Quick Select |

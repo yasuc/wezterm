@@ -24,7 +24,7 @@
 | `Leader b` | バッファをNeovimで表示（WezCapture） |
 | `Leader l` | コマンド起動セレクター（ghost/lazygit/nvim/yazi） |
 | `Leader a` | ARNをQuick SelectしてAWS Consoleを開く |
-| `Ctrl+Shift+c` | ペインを1行に最小化/復元 |
+| `Ctrl+Shift+c` | ペインを1行に最小化/復元（トグル） |
 | `Ctrl+Shift+h/j/k/l` | ペイン間移動 |
 | `Ctrl+Tab` / `Ctrl+Shift+Tab` | 次/前のタブ |
 | `Super+n` | 新規ウィンドウ |
@@ -35,7 +35,7 @@
 | `Super+r` | 設定再読み込み |
 | `Ctrl+P` | コマンドパレット |
 | `Ctrl+X` | コピーモード（ビューポート中央） |
-| `Ctrl+Z` | ペインズーム切替 |
+| `Ctrl+Shift+Z` | ペインズーム切替 |
 | `Ctrl+U` | 文字選択 |
 | `Ctrl+Shift+R` | 設定を強制再読み込み |
 | `Super+Shift+Space` | Quick Select |
